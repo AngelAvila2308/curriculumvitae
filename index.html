@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="color: rgb(255, 255, 255); text-align: center;">Mi Currículum Vitae</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- Biblioteca jsPDF -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <img src="foto.jpeg" alt="Foto de [Angel]">
+    <h1>Angel Daniel Avila Arriaza</h1>
+    <p>Estudiante de Ingeniería en sistemas</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Soy un estudiante de Ingeniería en sistemas que estudia en la Universidad Rafael Landivar para asi convertirme en un gran ingeniero.</p>
+            <p>Viaje a México para estudiar Bachillerato en informatica y aprendí muchas cosas de allá.</p>
+        </section>
+        
+        <section>
+            <h2>Educación</h2>
+            <ul>
+                <li>Pre-Primaria - Una Vida Feliz (2005-2008)</li>
+                <li>Primari - Una vida Feliz (2009-2013)</li>
+                <li>Primaria (sexto primaria) - Fe y alegría (2014)</li>
+                <li>Básico - Fe y alegría (2015-2018)</li>
+                <li>Bachilletaro - Conalep Puebla III (2019-2021)</li>
+                <li>Universidad, Ingeniería en sistemas - Universidad Rafael Landivar (2022-Actualidad)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>Servicio en secretaria - Conalep Puebla III (2019-2020)</li>
+                <li>Bazar navideño - Universidad Rafael Landivar (2022-2022)</li>
+                <li>Votaciones en segunda convocatoria - JRV DC (2023-2023)</li>
+                <li>Portal Talkme - Talkme! (2023-2023)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>★Visual Studio c#★</li>
+                <li>‡Visual Studio C++‡</li>
+                <li>∞HTML∞</li>
+                <li>¥SQL Server¥</li>
+                <li>µFilmora Wondeshareµ</li>
+                <li>ぁAdobe Photoshopぁ</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>$Ingles (Intermedio-Avanzado)$</li>
+                <li>ぁJapones (Intermedio)ぁ</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Certificados</h2>
+            <ul>
+                <li>Word</li>
+                <li>Power Point</li>
+                <li>Excel</li>
+                <li>Access</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Correo electrónico: AngelAvila2308@gmail.com | Correo universitario: adavilaa@correo.url.edu.gt</p>
+        <a href="https://drive.google.com/file/d/1rox4XwxGoUcN4ddq0Wmqv73dXn6y-V2A/view?usp=sharing" target="_blank" id="PDF">Descargar Currículum</a>
+        <a href="https://github.com/AngelAvila2308" target="_blank" id="btnGithub">Abrir GitHub</a>
+    </footer>
+
+    <script>
+        // Selecciona el enlace de cerrar página
+        const cerrarPagina = document.getElementById('cerrarPagina');
+
+        // Agrega un evento de clic al enlace
+        cerrarPagina.addEventListener('click', function(event) {
+            // Previene el comportamiento predeterminado del enlace (navegar a otro lugar)
+            event.preventDefault();
+            // Cierra la página
+            window.close();
+        });
+
+        // Selecciona el botón de GitHub
+        const btnGithub = document.getElementById('btnGithub');
+
+        // Agrega un evento de clic al botón
+        btnGithub.addEventListener('click', function() {
+            // Abre una nueva pestaña con la URL de GitHub
+            window.open('https://github.com/AngelAvila2308', '_blank');
+        });
+
+        // Selecciona el botón de descargar PDF
+        const btnDescargarPDF = document.getElementById('PDF');
+
+        // Agrega un evento de clic al botón
+        btnDescargarPDF.addEventListener('click', function() {
+            // Crea una nueva instancia de jsPDF
+            const pdf = new jsPDF();
+
+            // Obtiene el contenido HTML de la página
+            const contenido = document.body;
+
+            // Genera el PDF
+            pdf.html(contenido, {
+                callback: function(pdf) {
+                    // Descarga el PDF
+                    pdf.save('Mi_Curriculum_Vitae.pdf');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

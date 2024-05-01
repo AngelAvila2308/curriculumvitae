@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #251d20;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #c70909;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 30px;
+    background-color: #888888;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos de la lista de habilidades */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #080808;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 200px; /* ajusta el tamaño según sea necesario */
+    border-radius: 50%; /* para una imagen redonda */
+    margin-bottom: 10px; /* espacio entre la imagen y el texto */
+}
+
+#btnGithub {
+    padding: 10px 20px; /* Puedes ajustar el tamaño del botón cambiando los valores de padding */
+    font-size: 16px; /* Puedes ajustar el tamaño del texto del botón */
+    background-color: #3b0612; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnGithub:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+#cerrarPagina {
+    padding: 10px 20px; /* Puedes ajustar el tamaño del botón cambiando los valores de padding */
+    font-size: 16px; /* Puedes ajustar el tamaño del texto del botón */
+    background-color: #666804; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#PDF {
+    padding: 10px 20px; /* Puedes ajustar el tamaño del botón cambiando los valores de padding */
+    font-size: 16px; /* Puedes ajustar el tamaño del texto del botón */
+    background-color: #3b0612; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
